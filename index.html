@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Papaya Fresh</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/styles/style.css" />
+  </head>
+
+  <body>
+    <div class="strip py-1">
+      <div class="container d-flex justify-content-end">
+        <p>
+          entre em contato
+          <svg
+            stroke="currentColor"
+            fill="currentColor"
+            stroke-width="0"
+            viewBox="0 0 512 512"
+            class="text-[6px] mx-2"
+            height="6"
+            width="6"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"></path>
+          </svg>
+          (34) 9 9886-1893
+        </p>
+      </div>
+    </div>
+
+    <header class="container d-flex align-items-center justify-content-between">
+      <a href="/">
+        <img src="/imgs/Logo.png" alt="Papaya Fresh" />
+      </a>
+
+      <button
+        id="menubar"
+        onclick="showMenu()"
+        class="menubar d-flex d-md-none"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 448 512"
+          fill="#fff"
+          width="16"
+          height="16"
+        >
+          <path
+            d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+          />
+        </svg>
+      </button>
+
+      <nav>
+        <ul class="d-flex">
+          <li>
+            <a href="/">INÍCIO</a>
+          </li>
+          <li>
+            <a href="/sobre.html">SOBRE NÓS</a>
+          </li>
+          <li>
+            <a href="#worktogether">TRABALHE CONOSCO</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="intro">
+        <img
+          src="/imgs/banner-juice-fruits.jpg"
+          alt=""
+          class="background-intro d-none d-sm-block"
+        />
+
+        <div class="container px-4">
+          <div class="list-cards row gx-4">
+            <div class="col-md-4">
+              <div class="card cardapio h-100">
+                <img src="/imgs/cardapio.svg" alt="" />
+                <h2>CARDÁPIO</h2>
+                <p>
+                  Sabores <strong>autênticos</strong>, ingredientes
+                  <strong>frescos</strong>, experiência
+                  <strong>inesquecível</strong>. Descubra o que está esperando
+                  por você em nosso cardápio.
+                </p>
+                <a href="/cardapio.pdf" download class="button"
+                  ><svg
+                    stroke="currentColor"
+                    fill="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 512 512"
+                    height="1em"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M216 0h80c13.3 0 24 10.7 24 24v168h87.7c17.8 0 26.7 21.5 14.1 34.1L269.7 378.3c-7.5 7.5-19.8 7.5-27.3 0L90.1 226.1c-12.6-12.6-3.7-34.1 14.1-34.1H192V24c0-13.3 10.7-24 24-24zm296 376v112c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V376c0-13.3 10.7-24 24-24h146.7l49 49c20.1 20.1 52.5 20.1 72.6 0l49-49H488c13.3 0 24 10.7 24 24zm-124 88c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20zm64 0c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20z"
+                    ></path>
+                  </svg>
+                  CARDÁPIO
+                </a>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card parte-familia h-100">
+                <img src="/imgs/family.svg" alt="" />
+                <h2>FAÇA PARTE DA FAMÍLIA</h2>
+                <p>
+                  Quanto mais você compra, mais <strong>benefícios</strong> você
+                  acumula, mais <strong>vantagens</strong> você tem.
+                </p>
+                <a href="#worktogether" class="button">
+                  <svg
+                    stroke="currentColor"
+                    fill="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 576 512"
+                    height="1em"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.8 207.7c-13.1-17.8-9.3-42.8 8.5-55.9L142.9 58.5C166.2 41.3 194.5 32 223.5 32H384 544c17.7 0 32 14.3 32 32v64c0 17.7-14.3 32-32 32H507.2l-44.9 36c-22.7 18.2-50.9 28-80 28H304 288 224c-17.7 0-32-14.3-32-32s14.3-32 32-32h64 16c8.8 0 16-7.2 16-16s-7.2-16-16-16H183.4L63.7 216.2c-17.8 13.1-42.8 9.3-55.9-8.5zM382.4 160l0 0 .9 0c-.3 0-.6 0-.9 0zM568.2 304.3c13.1 17.8 9.3 42.8-8.5 55.9L433.1 453.5c-23.4 17.2-51.6 26.5-80.7 26.5H192 32c-17.7 0-32-14.3-32-32V384c0-17.7 14.3-32 32-32H68.8l44.9-36c22.7-18.2 50.9-28 80-28H272h16 64c17.7 0 32 14.3 32 32s-14.3 32-32 32H288 272c-8.8 0-16 7.2-16 16s7.2 16 16 16H392.6l119.7-88.2c17.8-13.1 42.8-9.3 55.9 8.5zM193.6 352l0 0-.9 0c.3 0 .6 0 .9 0z"
+                    ></path>
+                  </svg>
+                  FAÇA PARTE
+                </a>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card pedido h-100">
+                <img src="/imgs/order.svg" alt="" />
+                <h2>PEÇA SEU PEDIDO</h2>
+                <p>Evite filas, faça o seu pedido por aqui e retire na loja.</p>
+                <a
+                  href="https://wa.me/5534998861893"
+                  class="button"
+                  target="_blank"
+                >
+                  <svg
+                    stroke="currentColor"
+                    fill="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 448 512"
+                    height="1em"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"
+                    ></path>
+                  </svg>
+                  FAÇA SEU PEDIDO
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="worktogether">
+        <div class="container">
+          <div class="row px-3">
+            <div class="col-md-6 d-flex flex-column justify-content-center">
+              <h1 class="mb-3">FAÇA PARTE DA FAMÍLIA</h1>
+              <p>
+                Ao participar da nossa família, você ganha pontos a cada compra,
+                te trazendo mais perto de desfrutar de smoothies gratuitos,
+                upgrades de tamanho, ou até mesmo presentes especiais.
+              </p>
+            </div>
+            <div class="col-md-6">
+              <form class="overflow-hidden row justify-content-between mt-4">
+                <div class="form d-flex flex-column col-md-7">
+                  <div>
+                    <label for="name" class="d-block mb-1">Nome completo</label>
+                    <input type="text" id="name" placeholder="Seu nome" />
+                  </div>
+
+                  <div>
+                    <label for="email" class="d-block mb-1">E-mail</label>
+                    <input type="email" id="email" placeholder="Seu e-mail" />
+                  </div>
+
+                  <div>
+                    <label for="name" class="d-block mb-1">Nome completo</label>
+                    <input type="text" id="name" placeholder="Seu nome" />
+                  </div>
+
+                  <div>
+                    <label for="birthdate" class="d-block mb-1"
+                      >Data de nascimento</label
+                    >
+                    <input type="date" id="birthdate" />
+                  </div>
+
+                  <div class="d-flex">
+                    <input type="checkbox" id="news" />
+                    <label for="news" class="d-inline" style="font-size: 12px"
+                      >Aceito receber novidades</label
+                    >
+                  </div>
+
+                  <button class="button">ENVIAR</button>
+                </div>
+                <div class="col-md-5 p-0">
+                  <img src="/imgs/banner-formulario.jpg" alt="" class="w-100" />
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="location">
+        <div class="container">
+          <h1>Localização</h1>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15096.262969979363!2d-48.27911410490526!3d-18.92848396593227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94a444fb2286e32d%3A0xb6011ec75e701e92!2sAv.%20Rondon%20Pacheco%2C%20635%20-%20Maracan%C3%A3%2C%20Uberl%C3%A2ndia%20-%20MG%2C%2038400-242!5e0!3m2!1spt-BR!2sbr!4v1713322092564!5m2!1spt-BR!2sbr"
+            width="100%"
+            height="300"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="row p-2">
+          <a href="/" class="col-md-2">
+            <img src="/imgs/Logo Gestão 3.png" alt="Papaya Fresh" />
+          </a>
+
+          <div class="col-md-10">
+            <h1>Horário de funcionamento</h1>
+            <div class="row gy-4">
+              <div class="col-md-4">
+                <h5>Segunda a Quinta</h5>
+                <p>08h às 22h</p>
+              </div>
+              <div class="col-md-4">
+                <h5>Sexta</h5>
+                <p>08h às 22h</p>
+              </div>
+              <div class="col-md-4">
+                <h5>Sábado</h5>
+                <p>08h às 22h</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div id="modal" class="d-none">
+      <div class="relative">
+        <button onclick="hideMenu()" class="absolute">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 448 512"
+            fill="#fff"
+            width="16"
+            height="16"
+          >
+            <path
+              d="M273 256l169.6-169.6c9.4-9.4 9.4-24.6 0-33.9l-22.6-22.6c-9.4-9.4-24.6-9.4-33.9 0L256 200.1 86.4 30.4c-9.4-9.4-24.6-9.4-33.9 0L29.9 53c-9.4 9.4-9.4 24.6 0 33.9L200.1 256 30.4 425.6c-9.4 9.4-9.4 24.6 0 33.9l22.6 22.6c9.4 9.4 24.6 9.4 33.9 0L256 311.9l169.6 169.6c9.4 9.4 24.6 9.4 33.9 0l22.6-22.6c9.4-9.4 9.4-24.6 0-33.9L311.9 256z"
+            ></path>
+          </svg>
+        </button>
+        <nav>
+          <ul>
+            <li>
+              <a href="/">INÍCIO</a>
+            </li>
+            <li>
+              <a href="/sobre.html">SOBRE NÓS</a>
+            </li>
+            <li>
+              <a href="#worktogether">TRABALHE CONOSCO</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div id="blur" onclick="hideMenu()" class="d-none"></div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/script/script.js"></script>
+  </body>
+</html>
