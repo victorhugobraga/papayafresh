@@ -320,3 +320,8 @@ footer h5 {
         font-size: 1rem;
     }
 }
+
+#moreinfo h1 {
+    font-family: 'Baloo 2', sans-serif;
+    color: var(--secondary-color);
+}
